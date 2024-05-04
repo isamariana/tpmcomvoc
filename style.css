@@ -3,8 +3,12 @@ body {
     font-family: Arial, sans-serif;
   }
 
-  h1{
+  .h1{
     color: #FC0763;
+    font-family: poppins;
+  }
+
+  .h2{
     font-family: poppins;
   }
   
@@ -56,7 +60,7 @@ body {
   }
   
   .center-img {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
   }
 
@@ -75,17 +79,28 @@ body {
     margin-top: 20px; /* Espaçamento superior para o texto */
     line-height: 1.5; /* Espaçamento entre linhas */
   }
-  
-  .photo-sequence {
+
+  .sequencia {
     display: flex;
-    justify-content: center;
-  }
-  
-  .photo-sequence img {
-    max-width: 25%; /* Define o tamanho das imagens */
+    flex-direction: column; /* Para que as imagens fiquem uma abaixo da outra */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100vh; /* Define a altura do container como a altura total da tela */
+}
+
+/* Estilos para imagens */
+.sequencia {
+    max-width: 100%;
     height: auto;
-    margin: 10px; /* Adiciona espaçamento entre as imagens */
-  }
+    margin-bottom: -20px; /* Espaçamento entre as imagens */
+}
+
+/* Estilos para tela pequena */
+@media only screen and (max-width: 600px) {
+    .sequencia {
+        height: auto; /* Altura automática para telas menores */
+    }
+}
 
   .mulheres {
     display: flex;
@@ -121,24 +136,25 @@ body {
     text-align: center;
   }
 
-  .footer {
-    background-color: #FC0763;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .footer-content p {
-    margin: 5px 0;
-  }
+  footer {
+    background-color: #FC0763; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
 
+/* Estilos para os ícones */
+footer a {
+    margin: 0 20px; /* Espaçamento entre os ícones */
+    display: inline-block; /* Garante que os ícones ocupem o espaço necessário */
+}
+
+/* Estilos para o footer responsivo */
+@media only screen and (max-width: 600px) {
+    footer a {
+        margin: 10px 0; /* Espaçamento entre os ícones na vertical */
+    }
+}
   .image-container {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */

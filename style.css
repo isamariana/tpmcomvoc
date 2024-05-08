@@ -1,15 +1,15 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: lora;
   }
 
   .h1{
     color: #FC0763;
-    font-family: poppins;
+    font-family: lora;
   }
 
   .h2{
-    font-family: poppins;
+    font-family: lora;
   }
   
   .navbar {
@@ -22,7 +22,7 @@ body {
   
   .btn {
     color: rgb(0, 0, 0);
-    font-family: poppins;
+    font-family: lora;
     text-decoration: none;
     font-size: 20px;
     padding: 10px 20px;
